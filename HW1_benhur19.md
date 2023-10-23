@@ -38761,6 +38761,8 @@ stock_data_close=stock_data_close.fillna(0)
 
 ```
 
+Compared this two dataframes and displayed it on one table.
+
 
 ```python
 stock_data_comp= stock_data_open.compare(stock_data_close,result_names=("open", "close"), keep_equal=True)
@@ -39334,11 +39336,8 @@ CHANGE
 
 
 
-
-```python
-
+I could not computed the longest continuous time intervals
         
-```
 
 
 ```python
