@@ -22,7 +22,7 @@ The amount of industrial area in a neighbourhood may affect its air quality in s
 Traffic density affects a neighbourhood’s air quality in a few ways. Combustion engines emit "tailpipe emissions" such as PM2.5, NOx and carbon monoxide (CO), while dust from wear to tires and from braking contribute additional particulate matter to the air. Fetching data on traffic density, focusing on vehicular emissions and traffic-related pollutants. This will involve collaboration with city traffic management sources and other relevant databases.  
 **Forestry Tree Points:**
 The project includes the integration of forestry data, incorporating information on urban green spaces, tree cover, and forestry management practices. This expansion aims to explore the role of urban forestry in influencing air quality and public health. The project integrates forestry data to assess how urban trees and greenery contribute to mitigating pollution. This objective aligns with the broader goal of understanding the interconnectedness of urban ecosystems.  
-**Health Data:**
+**Health Outcomes:**
 This objective involves fetching and integrating health-related data, including information on diseases such as asthma and other relevant health indicators. The goal is to correlate health data with environmental factors, providing insights into the broader health implications of the urban environment. This step aims to uncover correlations between air quality, industrial activities, traffic density, and prevalent health conditions, contributing to a holistic understanding of urban well-being.
 
 
@@ -46,8 +46,8 @@ The richness of this project lies in its ability to harness data from various so
 #### 4.1 NYC Air Quality Dataset: 
 This serves as the foundational dataset, providing traditional air quality indicators measured across different regions of the city. The dataset that will be used listed below.    
   
-1.https://a816-dohbesp.nyc.gov/IndicatorPublic/AQHub/realtime.html (NYC)  
-2.https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r (Real-Time)  
+1.https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r (NYC)    
+2. https://a816-dohbesp.nyc.gov/IndicatorPublic/AQHub/realtime.html (Real-Time)  
 3.https://www.epa.gov/aqs (USA all states)  
   
 The first dataset will be used mainly, I’ll consider other two if they needed. Data is provided by Department of Health and Mental Hygiene (DOHMH). It is made public at 2014. The information about this data explained below.  
@@ -97,6 +97,15 @@ Estimated annual boiler emissions per km2 as of January 2015. Calculated using h
 |start_date|	Date value for the start of the time_period|
 |data_value	|The actual data value for this indicator, measure, place, and time|
 |message|	Notes that apply to the data value|
+
+
+#### NYC Air Quality Real-Time Dataset:
+**Measurements (RT_flat.csv)**  
+  
+The data are hourly PM2.5 measurements, in micrograms per cubic meter of air.  
+Measurements included are from monitors located along high-traffic corridors or neighborhood locations to assess PM2.5 concentrations in the immediate vicinity. The results shown may not be indicative of overall PM2.5 concentrations in the neighborhood.  
+  
+Times shown (starttime) are in eastern standard time and do not change based on daylight savings time. The measurements are an average of all the PM2.5 measurements during the given hour. For example, all measurements collected between 9:00 AM and 10:00 AM are averaged and stored as 9:00 AM.  
 
 
 #### 4.2 Health Datasets:
